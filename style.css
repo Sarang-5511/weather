@@ -29,11 +29,11 @@ body{
 }
 h1{
     font-size: 3.5em;
-    color: rgb(56, 49, 45);
+    color: rgb(255, 255, 255);
     font-family: 'Permanent Marker', cursive;
 }
 #bod{
-    width: 50%;
+    width: 100%;
     margin-top: 12px;
     height: 1.5px;
     background-color: black;
@@ -137,4 +137,10 @@ h1{
           font-family:'Poppins', sans-serif ;
           text-align: left;
       }
+      .search{
+        padding-left: 5px;
+        font-size: 20px;
+     color: rgb(46, 46, 44);
+        cursor: pointer;
+    }
 }
