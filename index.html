@@ -11,19 +11,21 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,500;1,300&family=Permanent+Marker&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
-</head>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,500;1,300&family=Open+Sans+Condensed:wght@300&family=Permanent+Marker&family=Poppins:wght@300;400&display=swap"
+        rel="stylesheet" </head>
 
 <body>
     <div class="heading">
-        <h1>Mausam</h1>
+        <h1 id="current_time"></h1>
+        <h1 id="current_date"></h1>
 
     </div>
-   
+
     <div class="container cont-box">
-        <input type="text" id="city" placeholder="Enter city.." size="20">
+        <input type="text" id="city" placeholder="Enter city.." size="15">
         <a class="search"><i class="fa fa-search search" aria-hidden="true" onclick="search()"></i></a>
-   <div id="bod"></div>
+        <div id="bod"></div>
         <div id="name"></div>
         <div id="temp"></div>
         <div id="icon"></div>

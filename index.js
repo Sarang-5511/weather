@@ -1,3 +1,41 @@
+var today=new Date();
+var today_hour=today.getHours();
+var today_minute=today.getMinutes();
+const months = [
+    "January", "February", 
+    "March", "April", "May", 
+    "June", "July", "August",
+    "September", "October", 
+    "November", "December"
+];
+if(today_hour<12){
+    if(today_minute<10){
+        var today_time=today_hour + ": 0"+today.getMinutes()+ " am";
+    document.getElementById("current_time").innerHTML=today_time;
+    }
+    else{
+        var today_time=today_hour + ": "+today.getMinutes()+ " am";
+        document.getElementById("current_time").innerHTML=today_time;
+    }
+    
+}
+if(today_hour>12){
+    if(today_minute<10){
+    var today_time=today_hour + ": 0"+today.getMinutes()+ " pm";
+    document.getElementById("current_time").innerHTML=today_time;
+    }
+    else{
+        var today_time=today_hour + ": "+today.getMinutes()+ " pm";
+        document.getElementById("current_time").innerHTML=today_time;
+    }
+}
+
+var today_date=today.getDate()+ " "+months[today.getMonth()];
+document.getElementById("current_date").innerHTML=today_date;
+
+
+
+
 console.log("success");
 let weather = {
     fetchweather: function (city) {

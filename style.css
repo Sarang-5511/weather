@@ -23,14 +23,16 @@ body{
     cursor: pointer;
 }
 .heading{
-    text-align: center;
-    padding: 20px 0;
-
+    width: 400px;
+  
+    margin: 0 auto;
+    padding: 20px 0px;
+    text-align: left;
 }
 h1{
     font-size: 3.5em;
     color: rgb(255, 255, 255);
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 #bod{
     width: 100%;
