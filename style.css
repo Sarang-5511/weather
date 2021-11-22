@@ -81,7 +81,7 @@ body{
         color: rgb(0, 0, 0);
         padding: 20px 10px;
         width: 280px;
-        height: 350px;
+        height: 380px;
         margin: 80px auto;
         background-color: rgb(181, 255, 255);
         border-radius: 10px;
@@ -97,7 +97,7 @@ body{
         background-color: whitesmoke;
         color: black;
         border: none;
-        margin: 10px auto;
+        margin: 15px auto;
     }
     .but:hover{
         border: 1px black solid;
