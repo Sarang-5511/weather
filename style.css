@@ -2,20 +2,34 @@ body{
     margin: 0;
     padding: 0;
     font-size: 16px;
-    background-image: url("back2.jpg");
-    background-position: center;
+    background-image: url("weather.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 .cont-box{
-    
-    padding: 20px;
-    width: fit-content;
+    color: rgb(0, 0, 0);
+    padding: 20px 10px;
+    width: 400px;
     height: 320px;
     margin: 150px auto;
-    background-color: aqua;
+    background-color: rgb(181, 255, 255);
     border-radius: 10px;
-    opacity: 0.8;
+    opacity: 0.7;
+}
+.but{
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px;
+    height: 40px;
+    width: 90px;
+    cursor: pointer;
+    background-color: whitesmoke;
+    color: black;
+    border: none;
+}
+.but:hover{
+    border: 1px black solid;
+
 }
 #city{
   border: none;
@@ -51,4 +65,83 @@ body{
     font-size: 22px;
     font-weight: 200;
     font-family:'Poppins', sans-serif ;
+}
+@media only screen and (max-width:570px) {
+    body{
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        background-image: url("weather.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 700px;
+    }
+    .cont-box{
+       text-align: center;
+        color: rgb(0, 0, 0);
+        padding: 20px 10px;
+        width: 280px;
+        height: 350px;
+        margin: 80px auto;
+        background-color: rgb(181, 255, 255);
+        border-radius: 10px;
+        opacity: 0.7;
+    }
+    .but{
+        font-weight: bold;
+        font-size: 20px;
+        padding: 5px;
+        height: 40px;
+        width: 90px;
+        cursor: pointer;
+        background-color: whitesmoke;
+        color: black;
+        border: none;
+        margin: 10px auto;
+    }
+    .but:hover{
+        border: 1px black solid;
+    
+    }
+    #city{
+        border: none;
+        border-radius: 8px;
+          background-color: rgb(8, 8, 8);
+          font-size: 22px;
+          color: beige;
+          text-align: left;
+      }
+      #name{
+          font-size: 28px;
+          font-family: 'Poppins', sans-serif;
+          font-weight: 500;
+          padding-top: 10px;
+          text-align: left;
+      }
+      #temp{
+          font-size: 50px;
+          font-weight: bold;
+          padding-top: 3px;
+          text-align: left;
+      
+      }
+      #desp{
+          font-size: 22px;
+          font-weight: 200;
+          font-family: 'Poppins', sans-serif;
+          text-align: left;
+      
+      }
+      #speed{
+          font-size: 22px;
+          font-weight: 200;
+          font-family: 'Poppins', sans-serif;
+          text-align: left;
+      }
+      #visibility{
+          font-size: 22px;
+          font-weight: 200;
+          font-family:'Poppins', sans-serif ;
+          text-align: left;
+      }
 }

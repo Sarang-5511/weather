@@ -9,20 +9,28 @@ let weather = {
         const { icon, description } = data.weather[0];
         const { temp, temp_min, temp_max } = data.main;
         const { speed } = data.wind;
-        const { visibility }=data;
+        const { visibility } = data;
         const temp_final = parseInt(temp, 10);
-        const visi_final = visibility/1000;
+        const visi_final = visibility / 1000;
         console.log(name);
         console.log(visi_final);
         document.getElementById("name").innerHTML = name;
-        document.getElementById("temp").innerHTML = temp_final + " * c";
         document.getElementById("desp").innerText = "Description : " + description;
+        document.getElementById("temp").innerHTML = temp_final + " ° c";
         document.getElementById("speed").innerText = "Wind Speed : " + speed + " km\hr";
         document.getElementById("visibility").innerText = "Visibility : " + visi_final + " km";
 
     },
     searchresult: function () {
-        this.fetchweather(document.getElementById("city").value);
+        const city = document.getElementById("city").value;
+        if (city == "") {
+            alert('Please enter the city name!');
+        }
+        else {
+
+
+            this.fetchweather(city);
+        }
     }
 };
 
