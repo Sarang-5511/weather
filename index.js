@@ -37,7 +37,7 @@ if(today_hour>12){
 
 var today_date=today.getDate()+ " "+months[today.getMonth()];
 document.getElementById("current_date").innerHTML=today_date;
-document.getElementById("current_day").innerHTML=days[today_day-1]+ ", ";
+document.getElementById("current_day").innerHTML=days[today_day-1]+ ",   ";
 
 
 
