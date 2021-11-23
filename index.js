@@ -29,11 +29,11 @@ setInterval(()=>{
     }
     if(today_hour>12){
         if(today_minute<10){
-        var today_time=today_hour + " : 0"+today.getMinutes()+ "   pm";
+        var today_time=today_hour-12 + " : 0"+today.getMinutes()+ "   pm";
         document.getElementById("current_time").innerHTML=today_time;
         }
         else{
-            var today_time=today_hour + " : "+today.getMinutes()+ "   pm";
+            var today_time=today_hour-12 + " : "+today.getMinutes()+ "   pm";
             document.getElementById("current_time").innerHTML=today_time;
         }
     }
