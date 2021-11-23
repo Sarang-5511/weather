@@ -60,8 +60,8 @@ let weather = {
         console.log(visi_final);
         document.getElementById("name").innerHTML = name;
         document.getElementById("desp").innerText = "Description : " + description;
-        document.getElementById("icon").src="https://openweathermap.org/img/wn/"+ icon +".png";
-        document.getElementById("temp").innerHTML = temp_final + "° C";
+      
+        document.getElementById("temp").innerHTML = temp_final + "° c";
         document.getElementById("speed").innerText = "Wind Speed : " + speed + " km/hr";
         document.getElementById("visibility").innerText = "Visibility : " + visi_final + " km";
 
