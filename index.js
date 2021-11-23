@@ -54,17 +54,31 @@ let weather = {
         const { temp, temp_min, temp_max } = data.main;
         const { speed } = data.wind;
         const { visibility } = data;
+        const { sunrise}=data.sys;
+        const {sunset}=data.sys;
+        console.log(sunrise);
+        var sunrise_utc=sunrise;
+        const sunrise_date=new Date(sunrise_utc*1000);
+const sunrise_hour=sunrise_date.getHours();
+const sunrise_min=sunrise_date.getMinutes();
+const sunrise_time=sunrise_hour+" : "+sunrise_min + " am";
+var sunset_utc=sunset;
+const sunset_date=new Date(sunset_utc*1000);
+const sunset_hour=sunset_date.getHours();
+const sunset_min=sunset_date.getMinutes();
+const sunset_time=sunset_hour-12+" : "+sunset_min + " pm";
+
         const temp_final = parseInt(temp, 10);
         const visi_final = visibility / 1000;
         console.log(name);
         console.log(visi_final);
         document.getElementById("name").innerHTML = name;
         document.getElementById("desp").innerText = "Description : " + description;
-      
         document.getElementById("temp").innerHTML = temp_final + "° c";
         document.getElementById("speed").innerText = "Wind Speed : " + speed + " km/hr";
         document.getElementById("visibility").innerText = "Visibility : " + visi_final + " km";
-
+        document.getElementById("sunrise_time").innerHTML="Sunrise time : "+sunrise_time;
+        document.getElementById("sunset_time").innerHTML="Sunset time  : "+sunset_time;
     },
     searchresult: function () {
         const city = document.getElementById("city").value;
