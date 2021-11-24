@@ -30,7 +30,8 @@ body{
     text-align: left;
 }
 h1{
-    font-size: 3.3em;
+    font-weight:500;
+    font-size: 2.75em;
     color: rgb(255, 255, 255);
     font-family: 'Open Sans Condensed', sans-serif;
 }
