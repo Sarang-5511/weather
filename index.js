@@ -6,8 +6,8 @@ const months = [
     "September", "October", 
     "November", "December"
 ];
-const days = [
-"Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"
+const days = ["Sunday",
+"Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"
 ];
 setInterval(()=>{
     var today=new Date();
