@@ -6,7 +6,7 @@ const months = [
     "September", "October", 
     "November", "December"
 ];
-const days = [,
+const days = [
 "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"
 ];
 setInterval(()=>{
