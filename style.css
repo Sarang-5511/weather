@@ -20,7 +20,7 @@ body {
 
 .search {
     padding-left: 0;
-    
+    margin: auto;
     font-size: 26px;
     color: rgb(46, 46, 44);
     cursor: pointer;
@@ -118,7 +118,7 @@ h1 {
         /* text-align: center; */
         color: rgb(0, 0, 0);
         padding: 20px 10px;
-        width: 370px;
+        width: 350px;
         height: 450px;
         margin: 50px auto;
         background-color: rgb(181, 255, 255);
