@@ -7,11 +7,12 @@ const months = [
     "November", "December"
 ];
 const days = [
-    "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+    "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
 ];
 setInterval(() => {
     var today = new Date();
     var today_day = today.getDay();
+    console.log(today_day);
     console.log(today_day);
     var today_hour = today.getHours();
     var today_minute = today.getMinutes();
@@ -40,7 +41,7 @@ setInterval(() => {
 
     var today_date = today.getDate() + " " + months[today.getMonth()];
     document.getElementById("current_date").innerHTML = today_date;
-    document.getElementById("current_day").innerHTML = days[today_day - 1] + ",   ";
+    document.getElementById("current_day").innerHTML = days[today_day] + ",   ";
 }, 1000);
 
 let weather = {
