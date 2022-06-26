@@ -102,7 +102,17 @@ h1 {
     font-weight: 200;
     font-family: 'Poppins', sans-serif;
 }
+.footer-container{
+    text-align: center;
+    color:white;
 
+}
+.footer-container p{
+    font-size: 22px;
+}
+.fa{
+    color: red;
+}
 @media only screen and (max-width:570px) {
     body {
         margin: 0;
@@ -113,13 +123,20 @@ h1 {
         background-size: cover;
         height: 700px;
     }
-
+    .footer-container{
+        text-align: center;
+        color:white;
+    
+    }
+    .footer-container p{
+        font-size: 18px;
+    }
     .cont-box {
         /* text-align: center; */
         color: rgb(0, 0, 0);
         padding: 20px 10px;
         width: 350px;
-        height: 450px;
+        height: 400px;
         margin: 50px auto;
         background-color: rgb(181, 255, 255);
         border-radius: 10px;
