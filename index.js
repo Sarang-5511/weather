@@ -58,6 +58,7 @@ let weather = {
         const { sunrise } = data.sys;
         const { sunset } = data.sys;
         const {cod} = data;
+        console.log("icon is "+icon);
         console.log(sunrise);
       
         var sunrise_utc = sunrise;
@@ -85,6 +86,8 @@ let weather = {
         document.getElementById("visibility").innerText = "Visibility : " + visi_final + " km";
         document.getElementById("sunrise_time").innerHTML = "Sunrise time : " + sunrise_time;
         document.getElementById("sunset_time").innerHTML = "Sunset time  : " + sunset_time;
+        document.getElementById("icon").innerText = "http://openweathermap.org/img/wn/"+icon+"@2x.png";
+
     },
     searchresult: function () {
         const city = document.getElementById("city").value;

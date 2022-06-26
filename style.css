@@ -110,9 +110,7 @@ h1 {
 .footer-container p{
     font-size: 22px;
 }
-.fa{
-    color: red;
-}
+
 @media only screen and (max-width:570px) {
     body {
         margin: 0;
