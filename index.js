@@ -38,7 +38,16 @@ setInterval(() => {
             document.getElementById("current_time").innerHTML = today_time;
         }
     }
-
+    if(today_hour==12){
+        if (today_minute < 10) {
+            var today_time =12 + " : 0" + today.getMinutes() + "   pm";
+            document.getElementById("current_time").innerHTML = today_time;
+        }
+        else {
+            var today_time = 12 + " : " + today.getMinutes() + "   pm";
+            document.getElementById("current_time").innerHTML = today_time;
+        }
+    }
     var today_date = today.getDate() + " " + months[today.getMonth()];
     document.getElementById("current_date").innerHTML = today_date;
     document.getElementById("current_day").innerHTML = days[today_day] + ",   ";
